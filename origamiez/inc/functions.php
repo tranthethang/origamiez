@@ -1548,7 +1548,7 @@ function origamiez_comment_form($args = array(), $post_id = null)
             do_action('comment_form_must_log_in_after');
             ?>
         <?php else : ?>
-            <form action="<?php echo esc_url(site_url('/wp-comments-post.php')); ?>" method="post"
+            <form action="<?php echo esc_url(home_url('/wp-comments-post.php')); ?>" method="post"
                   id="<?php echo esc_attr($args['id_form']); ?>"
                   class="comment-form origamiez-widget-content clearfix" <?php echo esc_attr($html5 ? ' novalidate' : ''); ?>>
                 <?php do_action('comment_form_top'); ?>
