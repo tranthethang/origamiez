@@ -1,0 +1,14 @@
+/*
+ * --------------------------------------------------
+ * UPDATE :: 2023.08.08
+ * --------------------------------------------------
+ */
+body {
+  &.search-results,
+  &.post-template-default,
+  &.page-template-default {
+    #origamiez-body-inner {
+      display: flex;
+    }
+  }
+}
