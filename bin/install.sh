@@ -4,5 +4,5 @@
 sudo chmod 777 -R ./docker &&
 docker exec -it org_db /tmp/snapshot/restore.sh &&
 docker exec -it org_wp /tmp/snapshot/composer.sh &&
-docker exec -it org_wp /tmp/snapshot/restore-media.sh &&
+docker exec -it org_wp /tmp/snapshot/restore-media.sh
 

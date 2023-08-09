@@ -1,0 +1,107 @@
+/*.frm_rta input[type="text"] {width: 70%;} */
+.rta_alert_box{padding: 10px 20px !important;font-weight: 600;margin: 5px 0 15px !important;background: #fff !important;border-left: 4px solid #fff !important;box-shadow: 0 1px 1px 0 rgba(0,0,0,.1) !important;}
+.rta_alert_message{border-left-color: #46b450 !important;}
+.rta_alert_error{border-left-color: #CC0000 !important;}
+.rta_alert_warning{border-left-color: #e6db55 !important;}
+.rta_ajax_loader{display: none;border: 16px solid #f3f3f3;border-top: 16px solid #0173ab;border-radius: 50%;width: 30px;height: 30px;animation: spin 2s linear infinite;margin:0px auto;}
+.rta_ajax_loader_folder{width: 3px;height: 3px;position: absolute;border: 7px solid #ccc;border-top: 7px solid #0173ab;margin-top: -17px;}
+@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+.rta_hidden{display: none;}
+.rta_text_field_60{width: 100px;}
+.rta_error_link{font-size: 16px;font-weight: bold;text-decoration: underline !important;}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+img {
+    vertical-align: middle;
+}
+
+.dashicons-editor-help {
+    text-decoration: none;
+    margin-top: -1px;
+}
+
+#rtaContent .cpbParent .CircularProgressbar {
+    display: inline-block;
+    width: 200px;
+}
+
+#rtaContent .cpbParent .images {
+    border: 1px solid #cecece;
+    padding: 0px 15px 15px 15px;
+    margin-right: 50px;
+    display: inline-block;
+    float: left;
+}
+.btnStart,.btnDel{
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(255, 255, 255);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+    border-radius: 2px;
+    display: inline-block;
+    min-width: 88px;
+}
+.btnStart button,.btnDel button{
+    border: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background-color: rgb(0, 188, 212);
+    text-align: center;
+}
+.btnDel{
+    margin-left: 10px;
+}
+.btnDel button{
+    background-color: #999;
+}
+.timeDropdownSelect{
+    width: 240px;
+}
+.rta_error_box{
+    margin: 20px 0px;
+}
+.rta_error_box h4{
+    font-size: 16px;
+    margin: 0px;
+}
+.rta_error_box ul{
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    list-style: disc;
+}
+.rta_progress .images h5{
+    margin: 5px 0px;
+    font-size: 13px;
+}
+#rta_add_image_size_container td{
+    padding-left: 0px;
+}
+#rta_add_image_size_container input[type="text"],
+#rta_add_image_size_container input[type="number"]{
+    width: 100%;
+}
+#rta_add_image_size_container select{
+    width: 100%;
+}
