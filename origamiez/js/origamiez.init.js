@@ -41,6 +41,26 @@ let Origamier = {
                     autoplaySpeed: 700,
                     loop: true,
                     margin: 5,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        320: {
+                            items: 1,
+                        },
+                        480: {
+                            items: 1,
+                        },
+                        640: {
+                            items: 1,
+                        },
+                        720: {
+                            items: 1,
+                        },
+                        1024: {
+                            items: 1,
+                        }
+                    }
                 });
             });
         }
@@ -58,6 +78,8 @@ let Origamier = {
                 disableHI: true
             });
         }
+
+        const mobileMenuHandle = jQuery('#origamiez-mobile-menu-icon');
     },
     initResponsive: function () {
         jQuery("#origamiez-post-wrap, .post, .origamiez-widget-content").fitVids();
