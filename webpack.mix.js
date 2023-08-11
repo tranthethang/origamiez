@@ -26,6 +26,8 @@ mix
     processCssUrls: false
 });
 
+mix.js('assets/js/script.js', "origamiez/js")
+
 mix
     .sass("style.scss", "origamiez/")
     .sass("assets/sass/typography/default.scss", "origamiez/typography/")
@@ -74,12 +76,4 @@ mix
     .copy(
         "node_modules/jquery-poptrox/src/css/jquery.poptrox.css",
         "origamiez/css/jquery.poptrox.css"
-    )
-    .copy(
-        "node_modules/jquery-slidebars/src/jquery.slidebars.css",
-        "origamiez/css/jquery.slidebars.css"
-    )
-    .copy(
-        "node_modules/jquery-slidebars/src/jquery.slidebars.js",
-        "origamiez/js/jquery.slidebars.js"
     );

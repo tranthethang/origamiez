@@ -1,9 +1,11 @@
 <?php
+
 $menu_slug = has_nav_menu( 'mobile-nav' ) ? 'mobile-nav' : ( has_nav_menu( 'main-nav' ) ? 'main-nav' : false );
 if ( $menu_slug ):
 	?>
-    <div class="sb-slidebar sb-left sb-width-custom" off-canvas="left reveal">
+    <nav id="origamiez-mmenu">
 		<?php
+        // class="sb-slidebar sb-left sb-width-custom"
 		wp_nav_menu(
 			array(
 				'theme_location' => $menu_slug,
@@ -13,6 +15,6 @@ if ( $menu_slug ):
 			)
 		);
 		?>
-    </div>
+    </nav>
 <?php
 endif;
