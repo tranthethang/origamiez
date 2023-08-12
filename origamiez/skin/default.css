@@ -880,20 +880,6 @@ body.origamiez-boxer #origamiez-header-search-box form#search-form .search-submi
   #origamiez-post-adjacent .origamiez-post-adjacent-next {
     border-top: 1px dashed #DDDDDD;
   }
-  .origamiez-widget-posts-grid .origamiez-widget-content {
-    padding-bottom: 20px;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row .origamiez-wp-grid-post {
-    border-top: 1px solid #DDDDDD;
-    border-right: none;
-    border-left: none;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row.row-first .origamiez-wp-grid-post {
-    border-top: 1px solid #DDDDDD;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row.row-first .origamiez-wp-grid-post.origamiez-wp-grid-post-first {
-    border-top: none;
-  }
   .origamiez-widget-posts-playlist .row-first .origamiez-wp-other-post-even .entry-title {
     border-top: 1px solid #555555 !important;
   }

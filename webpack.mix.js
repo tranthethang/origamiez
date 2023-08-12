@@ -30,6 +30,7 @@ mix.js('assets/js/script.js', "origamiez/js")
 
 mix
     .sass("style.scss", "origamiez/")
+    .sass("assets/sass/responsive.scss", "origamiez/css/")
     .sass("assets/sass/typography/default.scss", "origamiez/typography/")
     .sass("assets/sass/skin/default.scss", "origamiez/skin/")
     .sass("assets/sass/skin/custom.scss", "origamiez/skin/")

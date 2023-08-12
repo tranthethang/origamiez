@@ -302,6 +302,19 @@ var OrigamierUtil = {
 
 /***/ }),
 
+/***/ "./node_modules/bootstrap/scss/bootstrap.scss":
+/*!****************************************************!*\
+  !*** ./node_modules/bootstrap/scss/bootstrap.scss ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/@fortawesome/fontawesome-free/css/all.css":
 /*!****************************************************************!*\
   !*** ./node_modules/@fortawesome/fontawesome-free/css/all.css ***!
@@ -367,6 +380,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./assets/sass/responsive.scss":
+/*!*************************************!*\
+  !*** ./assets/sass/responsive.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./assets/sass/typography/default.scss":
 /*!*********************************************!*\
   !*** ./assets/sass/typography/default.scss ***!
@@ -397,19 +423,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************!*\
   !*** ./assets/sass/skin/custom.scss ***!
   \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./node_modules/bootstrap/scss/bootstrap.scss":
-/*!****************************************************!*\
-  !*** ./node_modules/bootstrap/scss/bootstrap.scss ***!
-  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -506,15 +519,16 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/script": 0,
-/******/ 			"css/bootstrap": 0,
 /******/ 			"skin/custom": 0,
 /******/ 			"skin/default": 0,
 /******/ 			"typography/default": 0,
+/******/ 			"css/responsive": 0,
 /******/ 			"style": 0,
 /******/ 			"css/superfish": 0,
 /******/ 			"css/owl.theme.default": 0,
 /******/ 			"css/owl.carousel": 0,
-/******/ 			"css/fontawesome": 0
+/******/ 			"css/fontawesome": 0,
+/******/ 			"css/bootstrap": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -564,16 +578,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./assets/js/script.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./assets/sass/typography/default.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./assets/sass/skin/default.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./assets/sass/skin/custom.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./node_modules/bootstrap/scss/bootstrap.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./node_modules/@fortawesome/fontawesome-free/css/all.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./node_modules/owl.carousel/dist/assets/owl.carousel.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./node_modules/owl.carousel/dist/assets/owl.theme.default.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/bootstrap","skin/custom","skin/default","typography/default","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome"], () => (__webpack_require__("./node_modules/superfish/dist/css/superfish.css")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./assets/js/script.js")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./assets/sass/responsive.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./assets/sass/typography/default.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./assets/sass/skin/default.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./assets/sass/skin/custom.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./node_modules/bootstrap/scss/bootstrap.scss")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./node_modules/@fortawesome/fontawesome-free/css/all.css")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./node_modules/owl.carousel/dist/assets/owl.carousel.css")))
+/******/ 	__webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./node_modules/owl.carousel/dist/assets/owl.theme.default.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["skin/custom","skin/default","typography/default","css/responsive","style","css/superfish","css/owl.theme.default","css/owl.carousel","css/fontawesome","css/bootstrap"], () => (__webpack_require__("./node_modules/superfish/dist/css/superfish.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
