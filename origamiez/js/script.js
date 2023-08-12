@@ -10,14 +10,6 @@
 jQuery(document).ready(function ($) {
   'use strict';
 
-  var menu = new Mmenu($("#origamiez-mmenu").get(0), {
-    slidingSubmenus: true
-  });
-  var api = menu.API;
-  $('#origamiez-mobile-menu-icon').on('click', function () {
-    event.preventDefault();
-    api.open();
-  });
   Origamier.initMainMenu();
   Origamier.initCarouselPostRelated();
   Origamier.initResponsive();
@@ -157,6 +149,12 @@ var Origamier = {
         duration: 400,
         easing: 'swing'
       }
+    });
+    jQuery('#origamiez-mobile-wrap').on('click', function () {
+      jQuery('nav#origamiez-mobile-nav').toggleClass('is-active');
+    });
+    jQuery('#origmiez-mobile-nav__toggle').on('click', function () {
+      jQuery('nav#origamiez-mobile-nav').removeClass('is-active');
     });
   },
   initImageEffect: function initImageEffect() {

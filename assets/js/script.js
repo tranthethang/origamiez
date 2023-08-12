@@ -134,6 +134,12 @@ let Origamier = {
                 easing: 'swing'
             }
         });
+        jQuery('#origamiez-mobile-wrap').on('click', function () {
+           jQuery('nav#origamiez-mobile-nav').toggleClass('is-active');
+        });
+        jQuery('#origmiez-mobile-nav__toggle').on('click', function () {
+            jQuery('nav#origamiez-mobile-nav').removeClass('is-active');
+        });
     },
     initImageEffect: function () {
         let images = jQuery(".image-effect, .image-overlay");

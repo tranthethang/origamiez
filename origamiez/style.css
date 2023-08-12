@@ -4,7 +4,7 @@
  * Author: Colours Theme
  * Author URI: http://colourstheme.com
  * Description: Origamiez theme is designed for magazine, newspaper, and forum with flexible layout.
- * Version: 2.0.1691588984
+ * Version: 2.0.1691858643
  * License: GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: origamiez
@@ -460,7 +460,7 @@ form.search-form .search-submit {
 
 #mobile-menu {
   margin: 0;
-  padding: 60px 20px 20px 20px;
+  padding: 20px;
 }
 #mobile-menu ul, #mobile-menu li {
   list-style: none;
@@ -2282,4 +2282,39 @@ body.origamiez-page-magazine.origamiez-missing-sidebar-right #sidebar-center {
  */
 body.search-results #origamiez-body-inner, body.post-template-default #origamiez-body-inner, body.page-template-default #origamiez-body-inner {
   display: flex;
+}
+
+nav#origamiez-mobile-nav {
+  padding-top: 40px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  z-index: 100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  transform: translate(-240px, 0);
+}
+nav#origamiez-mobile-nav.is-active {
+  transform: translate(0, 0);
+}
+
+#origmiez-mobile-nav__toggle {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  font-size: 24px;
+  background-color: #E74C3C;
+}
+#origmiez-mobile-nav__toggle i {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 12px;
 }

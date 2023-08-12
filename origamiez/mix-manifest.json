@@ -1,5 +1,5 @@
 {
-    "/css/fontawesome.css": "/css/fontawesome.css",
+    "/js/script.js": "/js/script.js",
     "/css/bootstrap.css": "/css/bootstrap.css",
     "/skin/custom.css": "/skin/custom.css",
     "/skin/default.css": "/skin/default.css",
@@ -8,12 +8,11 @@
     "/css/superfish.css": "/css/superfish.css",
     "/css/owl.theme.default.css": "/css/owl.theme.default.css",
     "/css/owl.carousel.css": "/css/owl.carousel.css",
+    "/css/fontawesome.css": "/css/fontawesome.css",
     "/js/owl.carousel.js": "/js/owl.carousel.js",
     "/js/superfish.js": "/js/superfish.js",
     "/css/jquery.navgoco.css": "/css/jquery.navgoco.css",
     "/js/jquery.navgoco.js": "/js/jquery.navgoco.js",
     "/js/jquery.poptrox.js": "/js/jquery.poptrox.js",
-    "/css/jquery.poptrox.css": "/css/jquery.poptrox.css",
-    "/css/jquery.slidebars.css": "/css/jquery.slidebars.css",
-    "/js/jquery.slidebars.js": "/js/jquery.slidebars.js"
+    "/css/jquery.poptrox.css": "/css/jquery.poptrox.css"
 }
