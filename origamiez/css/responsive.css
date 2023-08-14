@@ -76,6 +76,9 @@
     border-left: none !important;
     border-right: none !important;
   }
+  body.search-results #origamiez-body-inner, body.page-template-default body.post-template-default #origamiez-body-inner, body.origamiez-layout-right-sidebar #origamiez-body-inner, body.origamiez-single-post-two-cols #origamiez-body-inner {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 979px) {
   .show-only-screen-and-max-width-979 {
@@ -221,6 +224,15 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  body.page-template-template-page-magazine #main-center-outer,
+  body.page-template-template-page-magazine #main-center-inner {
+    flex-direction: column;
+  }
+  body.page-template-template-page-magazine #main-center-outer > .origamiez-left, body.page-template-template-page-magazine #main-center-outer > .origamiez-right,
+  body.page-template-template-page-magazine #main-center-inner > .origamiez-left,
+  body.page-template-template-page-magazine #main-center-inner > .origamiez-right {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 639px) {
   .show-only-screen-and-max-width-639 {
@@ -296,6 +308,11 @@
     border-left: none !important;
     border-top: none !important;
     float: none !important;
+  }
+  #sidebar-bottom .widget.origamiez-widget-posts-grid .origamiez-wp-grid-post {
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    margin-top: -1px;
   }
 }
 @media only screen and (max-width: 599px) {
@@ -561,6 +578,11 @@
     float: none !important;
     margin: 0 15px;
     width: auto;
+  }
+  #sidebar-bottom .widget.origamiez-widget-posts-grid .origamiez-wp-grid-post {
+    width: 50%;
+    border-top: 1px solid #DDDDDD;
+    margin-top: -1px;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 479px) {
