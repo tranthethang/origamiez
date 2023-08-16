@@ -75,7 +75,7 @@ h6 {
 }
 
 #main-menu a {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Neuton", serif;
   font-style: normal;
 }
 #main-menu a span.fa {
@@ -83,25 +83,25 @@ h6 {
 }
 #main-menu > li > a {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 3em;
 }
 #main-menu > li.menu-item-has-children > a:after {
   font-family: "FontAwesome" !important;
-  content: "\f107";
+  content: "\f0d7";
   font-weight: 400;
 }
 #main-menu li ul li.menu-item-has-children > a:after {
   font-family: "FontAwesome" !important;
-  content: "\f105";
+  content: "\f0da";
   line-height: 40px;
 }
 
 h2.widget-title {
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 13px;
+  font-family: "Neuton", serif;
+  font-size: 12px;
   line-height: 49px;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
 }
