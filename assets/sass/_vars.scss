@@ -4,14 +4,12 @@ $font-body-line-height: 1.5em;
 $font-body-weight: 400;
 $font-body-style: normal;
 
-//$font-menu: 'Lexend Deca', sans-serif;
 $font-menu: 'Neuton', serif;
 $font-menu-size: 15px;
 $font-menu-line-height: 3em;
 $font-menu-weight: 400;
 $font-menu-style: normal;
 
-//$font-widget-title: 'Lexend Deca', sans-serif;
 $font-widget-title: 'Neuton', serif;
 $font-widget-title-size: 12px;
 $font-widget-title-line-height: 49px;
@@ -66,7 +64,8 @@ $link-color: #222;
 $link-hover-color: #E74C3C;
 $primary-color: #E74C3C;
 $secondary-color: #F9F9F9;
-$main-menu-color: #333333;
+$main-menu-color: #fff; //#333333;
+$main-menu-bg-color: #333;
 $line-1-bg-color: #555555;
 $line-2-bg-color: #DDDDDD;
 $line-3-bg-color: #E5E5E5;

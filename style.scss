@@ -138,6 +138,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  background-color: $main-menu-bg-color;
 
   .sub-menu {
     display: none;
@@ -152,11 +153,11 @@
     display: inline-block;
     *display: inline-block;
 
-    &.origamiez-menuitem-first {
-      > a {
-        padding-left: 0;
-      }
-    }
+    //&.origamiez-menuitem-first {
+    //  > a {
+    //    padding-left: 0;
+    //  }
+    //}
 
     &.menu-item-has-children {
       > a {

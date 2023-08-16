@@ -32,11 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #origamiez-header {
   background: $white;
-  border-bottom: 1px solid $line-2-bg-color;
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 #origamiez-header-bottom {
-  border-bottom: 1px solid $line-2-bg-color;
+  //border-bottom: 1px solid $line-2-bg-color;
+  border-bottom: 2px solid $main-menu-bg-color;
 }
 
 #origamiez-header-bar-inner {
@@ -180,6 +182,11 @@ h1, h2, h3, h4, h5, h6 {
   .widget {
     margin-top: -1px;
     border-top: 1px solid $line-2-bg-color;
+
+    &:first-child {
+      margin-top: 0;
+      border-top: none;
+    }
   }
 }
 

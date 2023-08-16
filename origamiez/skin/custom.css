@@ -50,7 +50,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #main-menu a {
-  color: #333333;
+  color: #fff;
 }
 #main-menu > li.current-menu-item > a {
   color: #E74C3C;

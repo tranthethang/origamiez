@@ -26,11 +26,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 #origamiez-header {
   background: #FFFFFF;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 #origamiez-header-bottom {
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 2px solid #333;
 }
 
 #origamiez-header-bar-inner {
@@ -50,7 +51,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #main-menu a {
-  color: #333333;
+  color: #fff;
 }
 #main-menu > li.current-menu-item > a {
   color: #E74C3C;
@@ -137,6 +138,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 #sidebar-center .widget {
   margin-top: -1px;
   border-top: 1px solid #DDDDDD;
+}
+#sidebar-center .widget:first-child {
+  margin-top: 0;
+  border-top: none;
 }
 
 /*
