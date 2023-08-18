@@ -5,7 +5,7 @@ if ( $menu_slug ):
 	?>
     <nav id="origamiez-mobile-nav" class="sb-slidebar sb-left sb-width-custom clearfix">
         <div id="origmiez-mobile-nav__toggle">
-            <i class="fa fa-close"></i>
+            <i class="fa fa-times"></i>
         </div>
 		<?php
 		wp_nav_menu(

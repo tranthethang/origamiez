@@ -4,7 +4,7 @@
  * Author: Colours Theme
  * Author URI: http://colourstheme.com
  * Description: Origamiez theme is designed for magazine, newspaper, and forum with flexible layout.
- * Version: 2.1.1692295763
+ * Version: 2.1.1692378017
  * License: GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: origamiez
@@ -2288,7 +2288,6 @@ body.search-results #origamiez-body-inner, body.post-template-default #origamiez
 }
 
 nav#origamiez-mobile-nav {
-  padding-top: 40px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -2304,20 +2303,21 @@ nav#origamiez-mobile-nav.is-active {
 }
 
 #origmiez-mobile-nav__toggle {
-  padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   color: #FFFFFF;
   font-size: 24px;
-  background-color: #E74C3C;
 }
 #origmiez-mobile-nav__toggle i {
   display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
   text-align: center;
-  margin-right: 12px;
+  background-color: #E74C3C;
+  border-bottom-left-radius: 15px;
+  transition: 0.25ms;
+}
+#origmiez-mobile-nav__toggle i:hover {
+  opacity: 0.8;
 }

@@ -14,7 +14,6 @@ body {
 }
 
 nav#origamiez-mobile-nav {
-  padding-top: 40px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -30,20 +29,21 @@ nav#origamiez-mobile-nav {
   }
 }
 #origmiez-mobile-nav__toggle {
-  padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   color: $white;
   font-size: 24px;
-  background-color: $primary-color;
   i {
     display: block;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    border: 1px solid $white;
-    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
     text-align: center;
-    margin-right: 12px;
+    background-color: $primary-color;
+    border-bottom-left-radius: 15px;
+    transition: .25ms;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
