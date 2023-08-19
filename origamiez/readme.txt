@@ -1,4 +1,5 @@
-#Origamiez - Wordpress Theme
+Origamiez - Wordpress Theme
+---
 
 If you is planning to start an online blog website, Origamiez is a Blog WordPress theme which is designed for online blog sites.
 
@@ -35,6 +36,10 @@ Origamiez comes with a simple and clean layout but professional and nice look. T
 
 
 ##4. Versions
+
+- ####2.2.0 (2023.08.20)
+    - fix responsive & mobile menu
+    - update: third party libraries and jquery plugins to latest versions.
 
 - ####1.x.x (roadmap - comming soon..)
     - new: action hooks & filter hooks    

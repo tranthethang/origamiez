@@ -1,10 +1,10 @@
 /**
  * Theme Name: Origamiez
- * Theme URI: http://colourstheme.com/help-center/question-category/origamiez/
- * Author: Colours Theme
- * Author URI: http://colourstheme.com
+ * Theme URI: https://github.com/tranthethang/origamiez
+ * Author: openwpdotorg
+ * Author URI: http://openwp.org
  * Description: Origamiez theme is designed for magazine, newspaper, and forum with flexible layout.
- * Version: 2.1.1692465025
+ * Version: 2.2.0
  * License: GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: origamiez
@@ -2324,4 +2324,9 @@ nav#origamiez-mobile-nav.is-active {
 
 .origamiez-readmore-button {
   text-decoration: underline !important;
+}
+
+.origamiez-widget-posts-slider .col-left.col-sm-4 > div {
+  height: 100%;
+  aspect-ratio: 1/2;
 }

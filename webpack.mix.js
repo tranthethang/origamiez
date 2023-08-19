@@ -10,7 +10,8 @@ mix
                 loader: "string-replace-loader",
                 options: {
                     search: "STYLE_VERSION",
-                    replace: `2.1.${Math.floor(Date.now() / 1000)}`,
+                    // replace: `2.2.${Math.floor(Date.now() / 1000)}`,
+                    replace: `2.2.0`,
                 },
             },
             {

@@ -54,3 +54,10 @@ nav#origamiez-mobile-nav {
 .origamiez-readmore-button {
   text-decoration: underline !important;
 }
+
+.origamiez-widget-posts-slider {
+  .col-left.col-sm-4 > div {
+    height: 100%;
+    aspect-ratio: 1/2;
+  }
+}
