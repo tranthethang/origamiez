@@ -1,0 +1,63 @@
+/*
+ * --------------------------------------------------
+ * UPDATE :: 2023.08.08
+ * --------------------------------------------------
+ */
+body {
+  &.search-results,
+  &.post-template-default,
+  &.page-template-default {
+    #origamiez-body-inner {
+      display: flex;
+    }
+  }
+}
+
+nav#origamiez-mobile-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  z-index: 100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  transform: translate(-240px, 0);
+
+  &.is-active {
+    transform: translate(0, 0);
+  }
+}
+
+#origmiez-mobile-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+  color: $white;
+  font-size: 24px;
+
+  i {
+    display: block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: $primary-color;
+    border-bottom-left-radius: 15px;
+    transition: .25ms;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.origamiez-readmore-button {
+  text-decoration: underline !important;
+}
+
+.origamiez-widget-posts-slider {
+  .col-left.col-sm-4 > div {
+    height: 100%;
+    aspect-ratio: 1/2;
+  }
+}

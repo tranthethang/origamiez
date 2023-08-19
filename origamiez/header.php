@@ -19,7 +19,7 @@
 <?php wp_body_open(); ?>
 <?php do_action( 'origamiez_after_body_open' ); ?>
 <?php get_template_part( 'parts/menu', 'mobile' ); ?>
-<div id="sb-site" canvas="container">
+<div id="sb-site">
     <header id="origamiez-header">
 		<?php get_template_part( 'parts/top-bar' ); ?>
 		<?php

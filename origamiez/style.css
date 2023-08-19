@@ -1,16 +1,16 @@
 /**
  * Theme Name: Origamiez
- * Theme URI: http://colourstheme.com/help-center/question-category/origamiez/
- * Author: Colours Theme
- * Author URI: http://colourstheme.com
+ * Theme URI: https://github.com/tranthethang/origamiez
+ * Author: openwpdotorg
+ * Author URI: http://openwp.org
  * Description: Origamiez theme is designed for magazine, newspaper, and forum with flexible layout.
- * Version: 2.0.1689259983
+ * Version: 2.2.0
  * License: GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: origamiez
  * Requires at least: 5.5
- * Requires PHP: 8.0
- * Tested up to: 6.2
+ * Requires PHP: 7.4
+ * Tested up to: 6.3
  * Tags: one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, translation-ready
  */
 /*
@@ -124,6 +124,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  background-color: #333;
 }
 #main-menu .sub-menu {
   display: none;
@@ -136,8 +137,8 @@
   display: inline-block;
   *display: inline-block;
 }
-#main-menu > li.origamiez-menuitem-first > a {
-  padding-left: 0;
+#main-menu > li.menu-item-has-children > a {
+  padding-right: 20px;
 }
 #main-menu > li.menu-item-has-children > a:after {
   display: block;
@@ -146,14 +147,14 @@
   top: 0;
   height: 46px;
   width: 16px;
+  font-size: 50%;
 }
 #main-menu > li > a {
   display: block;
   height: 46px;
-  text-transform: uppercase;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #main-menu li {
   position: relative;
@@ -181,6 +182,7 @@
   top: 0;
   height: 40px;
   width: 16px;
+  font-size: 50%;
 }
 #main-menu li ul li a {
   display: block;
@@ -460,7 +462,7 @@ form.search-form .search-submit {
 
 #mobile-menu {
   margin: 0;
-  padding: 60px 20px 20px 20px;
+  padding: 20px;
 }
 #mobile-menu ul, #mobile-menu li {
   list-style: none;
@@ -1514,10 +1516,6 @@ body.origamiez-layout-single #origamiez-post-author .origamiez-author-bio {
 body.origamiez-layout-single #origamiez-post-related .widget-title {
   margin-bottom: 20px;
 }
-body.origamiez-layout-single #origamiez-post-related .origamiez-widget-content {
-  margin-left: -10px !important;
-  margin-right: -10px !important;
-}
 body.origamiez-layout-single #origamiez-post-related .origamiez-widget-content figure.post {
   padding-left: 10px;
   padding-right: 10px;
@@ -2141,6 +2139,10 @@ p.origamiez-readmore-block {
   margin-left: 40px;
 }
 
+#bottom-nav {
+  padding: 20px 0;
+}
+
 #bottom-mobile-menu,
 #top-mobile-menu {
   transition: all 0.5s;
@@ -2148,12 +2150,13 @@ p.origamiez-readmore-block {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   display: none;
-  margin: 20px auto 20px auto;
+  margin: 0;
   width: 100%;
   height: 40px;
   line-height: 40px;
   padding: 5px 10px;
   cursor: pointer;
+  color: #FFFFFF;
 }
 #bottom-mobile-menu option,
 #top-mobile-menu option {
@@ -2273,4 +2276,57 @@ body.origamiez-page-magazine.origamiez-missing-sidebar-right #sidebar-center {
 .fw-container {
   padding-left: 0;
   padding-right: 0;
+}
+
+/*
+ * --------------------------------------------------
+ * UPDATE :: 2023.08.08
+ * --------------------------------------------------
+ */
+body.search-results #origamiez-body-inner, body.post-template-default #origamiez-body-inner, body.page-template-default #origamiez-body-inner {
+  display: flex;
+}
+
+nav#origamiez-mobile-nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  z-index: 100;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  transform: translate(-240px, 0);
+}
+nav#origamiez-mobile-nav.is-active {
+  transform: translate(0, 0);
+}
+
+#origmiez-mobile-nav__toggle {
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+#origmiez-mobile-nav__toggle i {
+  display: block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #E74C3C;
+  border-bottom-left-radius: 15px;
+  transition: 0.25ms;
+}
+#origmiez-mobile-nav__toggle i:hover {
+  opacity: 0.8;
+}
+
+.origamiez-readmore-button {
+  text-decoration: underline !important;
+}
+
+.origamiez-widget-posts-slider .col-left.col-sm-4 > div {
+  height: 100%;
+  aspect-ratio: 1/2;
 }

@@ -1,18 +1,22 @@
 <?php
+
 $menu_slug = has_nav_menu( 'mobile-nav' ) ? 'mobile-nav' : ( has_nav_menu( 'main-nav' ) ? 'main-nav' : false );
 if ( $menu_slug ):
 	?>
-    <div class="sb-slidebar sb-left sb-width-custom" off-canvas="left reveal">
+    <nav id="origamiez-mobile-nav" class="sb-slidebar sb-left sb-width-custom clearfix">
+        <div id="origmiez-mobile-nav__toggle">
+            <i class="fa fa-times"></i>
+        </div>
 		<?php
 		wp_nav_menu(
 			array(
 				'theme_location' => $menu_slug,
-				'container'      => false,
+				'container'      => 'nav',
 				'menu_id'        => 'mobile-menu',
-				'menu_class'     => 'clearfix'
+				'menu_class'     => 'clearfix',
 			)
 		);
 		?>
-    </div>
+    </nav>
 <?php
 endif;

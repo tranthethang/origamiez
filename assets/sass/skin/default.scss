@@ -32,11 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #origamiez-header {
   background: $white;
-  border-bottom: 1px solid $line-2-bg-color;
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 #origamiez-header-bottom {
-  border-bottom: 1px solid $line-2-bg-color;
+  border-bottom: 2px solid $main-menu-bg-color;
 }
 
 #origamiez-header-bar-inner {
@@ -180,6 +181,11 @@ h1, h2, h3, h4, h5, h6 {
   .widget {
     margin-top: -1px;
     border-top: 1px solid $line-2-bg-color;
+
+    &:first-child {
+      margin-top: 0;
+      border-top: none;
+    }
   }
 }
 
@@ -786,6 +792,7 @@ ul.page-numbers {
 
   li {
     a, span {
+      border-radius: 5px;
       border: 1px solid $line-2-bg-color;
       text-decoration: none;
       @include transition(0.5s);
@@ -1230,30 +1237,7 @@ body.origamiez-boxer {
       border-top: 1px dashed $line-2-bg-color;
     }
   }
-  .origamiez-widget-posts-grid {
-    .origamiez-widget-content {
-      padding-bottom: 20px;
 
-      .row {
-        .origamiez-wp-grid-post {
-          border-top: 1px solid $line-2-bg-color;
-          border-right: none;
-          border-left: none;
-        }
-
-        &.row-first {
-          .origamiez-wp-grid-post {
-            border-top: 1px solid $line-2-bg-color;
-
-            &.origamiez-wp-grid-post-first {
-              border-top: none;
-            }
-          }
-        }
-      }
-    }
-
-  }
   .origamiez-widget-posts-playlist {
     .row-first {
       .origamiez-wp-other-post-even {

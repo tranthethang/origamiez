@@ -26,11 +26,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 #origamiez-header {
   background: #FFFFFF;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: none;
+  padding-bottom: 20px;
 }
 
 #origamiez-header-bottom {
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 2px solid #333;
 }
 
 #origamiez-header-bar-inner {
@@ -50,7 +51,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #main-menu a {
-  color: #333333;
+  color: #fff;
 }
 #main-menu > li.current-menu-item > a {
   color: #E74C3C;
@@ -137,6 +138,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 #sidebar-center .widget {
   margin-top: -1px;
   border-top: 1px solid #DDDDDD;
+}
+#sidebar-center .widget:first-child {
+  margin-top: 0;
+  border-top: none;
 }
 
 /*
@@ -578,6 +583,7 @@ ul.page-numbers {
   border-top: 1px solid #DDDDDD;
 }
 ul.page-numbers li a, ul.page-numbers li span {
+  border-radius: 5px;
   border: 1px solid #DDDDDD;
   text-decoration: none;
   transition: all 0.5s;
@@ -879,20 +885,6 @@ body.origamiez-boxer #origamiez-header-search-box form#search-form .search-submi
 @media only screen and (max-width: 767px) {
   #origamiez-post-adjacent .origamiez-post-adjacent-next {
     border-top: 1px dashed #DDDDDD;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content {
-    padding-bottom: 20px;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row .origamiez-wp-grid-post {
-    border-top: 1px solid #DDDDDD;
-    border-right: none;
-    border-left: none;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row.row-first .origamiez-wp-grid-post {
-    border-top: 1px solid #DDDDDD;
-  }
-  .origamiez-widget-posts-grid .origamiez-widget-content .row.row-first .origamiez-wp-grid-post.origamiez-wp-grid-post-first {
-    border-top: none;
   }
   .origamiez-widget-posts-playlist .row-first .origamiez-wp-other-post-even .entry-title {
     border-top: 1px solid #555555 !important;

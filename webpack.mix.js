@@ -10,7 +10,7 @@ mix
                 loader: "string-replace-loader",
                 options: {
                     search: "STYLE_VERSION",
-                    replace: `2.0.${Math.floor(Date.now() / 1000)}`,
+                    replace: `2.2.${Math.floor(Date.now() / 1000)}`,
                 },
             },
             {
@@ -26,8 +26,11 @@ mix
     processCssUrls: false
 });
 
+mix.js('assets/js/script.js', "origamiez/js")
+
 mix
     .sass("style.scss", "origamiez/")
+    .sass("assets/sass/responsive.scss", "origamiez/css/")
     .sass("assets/sass/typography/default.scss", "origamiez/typography/")
     .sass("assets/sass/skin/default.scss", "origamiez/skin/")
     .sass("assets/sass/skin/custom.scss", "origamiez/skin/")
@@ -74,12 +77,4 @@ mix
     .copy(
         "node_modules/jquery-poptrox/src/css/jquery.poptrox.css",
         "origamiez/css/jquery.poptrox.css"
-    )
-    .copy(
-        "node_modules/jquery-slidebars/src/jquery.slidebars.css",
-        "origamiez/css/jquery.slidebars.css"
-    )
-    .copy(
-        "node_modules/jquery-slidebars/src/jquery.slidebars.js",
-        "origamiez/js/jquery.slidebars.js"
     );

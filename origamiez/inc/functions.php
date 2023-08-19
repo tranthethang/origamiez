@@ -14,8 +14,7 @@ function origamiez_enqueue_scripts()
     wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-owl-carousel', "$dir/css/owl.carousel.css", array(), null);
     wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-owl-theme', "$dir/css/owl.theme.default.css", array(), null);
     wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-superfish', "$dir/css/superfish.css", array(), null);
-    wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-navgoco', "$dir/css/jquery.navgoco.css", array(), null);
-    wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-slidebars', "$dir/css/jquery.slidebars.css", array(), null);
+    wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-navgoco', "$dir/css/jquery.navgoco.css", array(), null);    
     wp_enqueue_style(ORIGAMIEZ_PREFIX . 'jquery-poptrox', "$dir/css/jquery.poptrox.css", array(), null);
     // STYLE.
     wp_enqueue_style(ORIGAMIEZ_PREFIX . 'style', get_stylesheet_uri(), array(), null);
@@ -1032,7 +1031,7 @@ function origamiez_enqueue_scripts()
     }
     // GOOGLE FONT.
     if ('off' !== _x('on', 'Google font: on or off', 'origamiez')) {
-        $google_fonts_url = add_query_arg('family', urlencode('Lexend+Deca:wght@400;700&display=swap|Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap|Neuton:ital,wght@0,400;0,700;1,400&display=swap'), '//fonts.googleapis.com/css');
+        $google_fonts_url = add_query_arg('family', urlencode('Roboto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap|Neuton:ital,wght@0,400;0,700;1,400&display=swap'), '//fonts.googleapis.com/css');
         wp_enqueue_style(ORIGAMIEZ_PREFIX . 'google-fonts', $google_fonts_url);
     }
     // DYNAMIC FONT.
@@ -1078,10 +1077,9 @@ function origamiez_enqueue_scripts()
     wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-navgoco', "$dir/js/jquery.navgoco.js", array('jquery'), null, true);
     wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-poptrox', "$dir/js/jquery.poptrox.js", array('jquery'), null, true);
     wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-transit', "$dir/js/jquery.transit.js", array('jquery'), null, true);
-    wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-owl-carousel', "$dir/js/owl.carousel.js", array('jquery'), null, true);
-    wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-slidebars', "$dir/js/jquery.slidebars.js", array('jquery'), null, true);
+    wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-owl-carousel', "$dir/js/owl.carousel.js", array('jquery'), null, true);    
     wp_enqueue_script(ORIGAMIEZ_PREFIX . 'jquery-superfish', "$dir/js/superfish.js", array('jquery'), null, true);
-    wp_enqueue_script(ORIGAMIEZ_PREFIX . 'origamiez-init', "$dir/js/origamiez.init.js", array('jquery'), null, true);
+    wp_enqueue_script(ORIGAMIEZ_PREFIX . 'origamiez-init', "$dir/js/script.js", array('jquery'), null, true);
     wp_localize_script(ORIGAMIEZ_PREFIX . 'origamiez-init', 'origamiez_vars', apply_filters('get_origamiez_vars', array(
         'info' => array(
             'home_url' => esc_url(home_url()),
@@ -1548,7 +1546,7 @@ function origamiez_comment_form($args = array(), $post_id = null)
             do_action('comment_form_must_log_in_after');
             ?>
         <?php else : ?>
-            <form action="<?php echo esc_url(site_url('/wp-comments-post.php')); ?>" method="post"
+            <form action="<?php echo esc_url(home_url('/wp-comments-post.php')); ?>" method="post"
                   id="<?php echo esc_attr($args['id_form']); ?>"
                   class="comment-form origamiez-widget-content clearfix" <?php echo esc_attr($html5 ? ' novalidate' : ''); ?>>
                 <?php do_action('comment_form_top'); ?>
