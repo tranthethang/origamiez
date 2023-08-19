@@ -792,6 +792,7 @@ ul.page-numbers {
 
   li {
     a, span {
+      border-radius: 5px;
       border: 1px solid $line-2-bg-color;
       text-decoration: none;
       @include transition(0.5s);

@@ -583,6 +583,7 @@ ul.page-numbers {
   border-top: 1px solid #DDDDDD;
 }
 ul.page-numbers li a, ul.page-numbers li span {
+  border-radius: 5px;
   border: 1px solid #DDDDDD;
   text-decoration: none;
   transition: all 0.5s;

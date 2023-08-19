@@ -28,11 +28,13 @@ nav#origamiez-mobile-nav {
     transform: translate(0, 0);
   }
 }
+
 #origmiez-mobile-nav__toggle {
   display: flex;
   justify-content: flex-end;
   color: $white;
   font-size: 24px;
+
   i {
     display: block;
     height: 35px;
@@ -42,8 +44,13 @@ nav#origamiez-mobile-nav {
     background-color: $primary-color;
     border-bottom-left-radius: 15px;
     transition: .25ms;
+
     &:hover {
       opacity: 0.8;
     }
   }
+}
+
+.origamiez-readmore-button {
+  text-decoration: underline !important;
 }
