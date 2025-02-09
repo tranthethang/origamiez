@@ -1,0 +1,4 @@
+img:is([sizes="auto" i], [sizes^="auto," i]) {
+    content-visibility: auto;
+    contain-intrinsic-size: 250px;
+}

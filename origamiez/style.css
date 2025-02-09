@@ -4,7 +4,7 @@
  * Author: openwpdotorg
  * Author URI: http://openwp.org
  * Description: Origamiez theme is designed for magazine, newspaper, and forum with flexible layout.
- * Version: 2.2.0
+ * Version: 3.0.1739116389
  * License: GNU General Public License v3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: origamiez
@@ -2329,4 +2329,9 @@ nav#origamiez-mobile-nav.is-active {
 .origamiez-widget-posts-slider .col-left.col-sm-4 > div {
   height: 100%;
   aspect-ratio: 1/2;
+}
+
+img:is([sizes=auto i], [sizes^="auto," i]) {
+  content-visibility: auto;
+  contain-intrinsic-size: 250px;
 }

@@ -99,34 +99,6 @@ table.comments td.comment p a:after {
 	font-size: 120%;
 	margin-top: .5rem;
 }
-.akismet-alert {
-	padding: 0.4em 1em 1.4em 1em;
-	box-sizing: border-box;
-	box-shadow: 0 0 0 1px rgba(200, 215, 225, 0.5), 0 1px 2px #e9eff3;
-}
-
-.akismet-alert h3.akismet-key-status {
-	color: #fff;
-	margin: 1em 0 0.5em 0;
-}
-
-.akismet-alert p.akismet-key-status {
-	font-size: 24px;
-}
-
-.akismet-alert p.akismet-description {
-	color:#fff;
-	font-size: 14px;
-    margin: 0 0;
-	font-style: normal;
-}
-
-.akismet-alert p.akismet-description a,
-.akismet-alert p.akismet-description a,
-.akismet-alert p.akismet-description a,
-.akismet-alert p.akismet-description a {
-	color: #fff;
-}
 
 .akismet-new-snapshot {
 	margin-top: 1em;
@@ -139,11 +111,6 @@ table.comments td.comment p a:after {
 	color: #888;
 	font-size: 11px;
     margin: 0;
-}
-
-.new-snapspot ul {
-	font-size: 12px;
-	width: 100%;
 }
 
 .akismet-new-snapshot ul li {
@@ -173,142 +140,11 @@ table.comments td.comment p a:after {
 	padding-top: 0;
 }
 
-.akismet-settings span.akismet-note{
+.akismet-settings span.akismet-note {
 	float: left;
 	padding-left: 23px;
 	font-size: 75%;
 	margin-top: -10px;
-}
-
-/**
- * For the activation notice on the plugins page.
- */
-
-#akismet_setup_prompt {
-	background: none;
-	border: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.akismet_activate {
-	border: 1px solid #4F800D;
-	padding: 5px;
-	margin: 15px 0;
-	background: #83AF24;
-	background-image: -webkit-gradient(linear, 0% 0, 80% 100%, from(#83AF24), to(#4F800D));
-	background-image: -moz-linear-gradient(80% 100% 120deg, #4F800D, #83AF24);
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	position: relative;
-	overflow: hidden;
-}
-
-.akismet_activate .aa_a {
-	position: absolute;
-	top: -5px;
-	right: 10px;
-	font-size: 140px;
-	color: #769F33;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.akismet_activate .aa_button {
-	font-weight: bold;
-	border: 1px solid #029DD6;
-	border-top: 1px solid #06B9FD;
-	font-size: 15px;
-	text-align: center;
-	padding: 9px 0 8px 0;
-	color: #FFF;
-	background: #029DD6;
-	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#029DD6), to(#0079B1));
-	background-image: -moz-linear-gradient(0% 100% 90deg, #0079B1, #029DD6);
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	width: 100%;
-	cursor: pointer;
-	margin: 0;
-}
-
-.akismet_activate .aa_button:hover {
-	text-decoration: none !important;
-	border: 1px solid #029DD6;
-	border-bottom: 1px solid #00A8EF;
-	font-size: 15px;
-	text-align: center;
-	padding: 9px 0 8px 0;
-	color: #F0F8FB;
-	background: #0079B1;
-	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#0079B1), to(#0092BF));
-	background-image: -moz-linear-gradient(0% 100% 90deg, #0092BF, #0079B1);
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-}
-
-.akismet_activate .aa_button_border {
-	border: 1px solid #006699;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	background: #029DD6;
-	background-image: -webkit-gradient(linear, 0% 0, 0% 100%, from(#029DD6), to(#0079B1));
-	background-image: -moz-linear-gradient(0% 100% 90deg, #0079B1, #029DD6);
-}
-
-.akismet_activate .aa_button_container {
-	box-sizing: border-box;
-	display: inline-block;
-	background: #DEF1B8;
-	padding: 5px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	-webkit-border-radius: 2px;
-	width: 266px;
-}
-
-.akismet_activate .aa_description {
-	position: absolute;
-	top: 22px;
-	left: 285px;
-	margin-left: 25px;
-	color: #E5F2B1;
-	font-size: 15px;
-}
-
-.akismet_activate .aa_description strong {
-	color: #FFF;
-	font-weight: normal;
-}
-
-@media (max-width: 550px) {
-	.akismet_activate .aa_a {
-		display: none;
-	}
-	
-	.akismet_activate .aa_button_container {
-		width: 100%;
-	}
-}
-
-@media (max-width: 782px) {
-	.akismet_activate {
-		min-width: 0;
-	}
-}
-
-@media (max-width: 850px) {
-	#akismet_setup_prompt .aa_description {
-		display: none;
-	}
-	
-	.akismet_activate {
-		min-width: 0;
-	}
 }
 
 .jetpack_page_akismet-key-config #wpcontent, .settings_page_akismet-key-config #wpcontent {
@@ -320,6 +156,7 @@ table.comments td.comment p a:after {
 	text-align:center;
 	box-shadow:0 1px 0 rgba(200,215,225,0.5),0 1px 2px #e9eff3
 }
+
 @media (max-width: 45rem) {
 	.akismet-masthead {
 		padding:0 1.25rem
@@ -478,7 +315,7 @@ table.comments td.comment p a:after {
 	width: 54px;
 	height: 54px;
 }
-	
+
 .akismet-box p:after {
 	content: ".";
 	display: block;
@@ -522,25 +359,12 @@ table.comments td.comment p a:after {
 	text-align: center;
 }
 
-.akismet-enter-api-key-box {
-	margin: 1.5rem 0;
-}
-
-.akismet-box .enter-api-key {
-	display: none;
-	margin-top: 1.5rem;
-}
-
 .akismet-box .akismet-toggles {
 	margin: 3rem 0;
 }
 
 .akismet-box .akismet-ak-connect, .akismet-box .toggle-jp-connect {
 	display: none;
-}
-
-.akismet-box .enter-api-key p {
-	padding: 0 1.5rem;
 }
 
 .akismet-button, .akismet-button:hover, .akismet-button:visited {
@@ -670,7 +494,12 @@ div.error.akismet-usage-limit-alert {
 }
 
 .akismet-usage-limit-alert .akismet-usage-limit-cta {
+	border-color: none;
 	text-align: right;
+}
+
+#akismet-plugin-container .akismet-usage-limit-cta a {
+	color: #d63638;
 }
 
 @media (max-width: 550px) {

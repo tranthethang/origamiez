@@ -1,9 +1,9 @@
-=== Akismet Anti-Spam: Spam Protection ===
+=== Akismet Anti-spam: Spam Protection ===
 Contributors: matt, ryan, andy, mdawaffe, tellyworth, josephscott, lessbloat, eoigal, cfinke, automattic, jgs, procifer, stephdau, kbrownkd, bluefuton, akismetantispam
-Tags: comments, spam, antispam, anti-spam, contact form, anti spam, comment moderation, comment spam, contact form spam, spam comments
+Tags: comments, spam, antispam, anti-spam, contact form
 Requires at least: 5.8
-Tested up to: 6.2.2
-Stable tag: 5.2
+Tested up to: 6.7.1
+Stable tag: 5.3.6
 License: GPLv2 or later
 
 The best anti-spam protection to block spam comments and spam in a contact form. The most trusted antispam solution for WordPress and WooCommerce.
@@ -31,6 +31,57 @@ Upload the Akismet plugin to your blog, activate it, and then enter your Akismet
 1, 2, 3: You're done!
 
 == Changelog ==
+
+= 5.3.6 =
+*Release Date - 4 February 2025*
+
+* Improve the utility of submit-spam and submit-ham requests.
+* Modernize styles for the Akismet classic widget.
+
+= 5.3.5 =
+*Release Date - 18 November 2024*
+
+* Address compatibility issues with < PHP 7.3 in v5.3.4 release.
+
+= 5.3.4 =
+*Release Date - 18 November 2024*
+
+* Improve activation notice on Comments for users who haven't set up their API key yet.
+* Improve notice about commercial site status.
+
+= 5.3.3 =
+*Release Date - 10 July 2024*
+
+* Make setup step clearer for new users.
+* Remove the stats section from the configuration page if the site has been revoked from the key.
+* Skip the Akismet comment check when the comment matches something in the disallowed list.
+* Prompt users on legacy plans to contact Akismet support for upgrades.
+
+= 5.3.2 =
+*Release Date - 21 March 2024*
+
+* Improve the empty state shown to new users when no spam has been caught yet.
+* Update the message shown to users without a current subscription.
+* Add foundations for future webhook support.
+
+= 5.3.1 =
+*Release Date - 17 January 2024*
+
+* Make the plugin more resilient when asset files are missing (as seen in WordPress Playground).
+* Add a link to the 'Account overview' page on akismet.com.
+* Fix a minor error that occurs when another plugin removes all comment actions from the dashboard.
+* Add the akismet_request_args filter to allow request args in Akismet API requests to be filtered.
+* Fix a bug that causes some contact forms to include unnecessary data in the comment_content parameter.
+
+= 5.3 =
+*Release Date - 14 September 2023*
+
+* Improve display of user notices.
+* Add stylesheets for RTL languages.
+* Remove initial disabled state from 'Save changes' button.
+* Improve accessibility of API key entry form.
+* Add new filter hooks for Fluent Forms.
+* Fix issue with PHP 8.1 compatibility.
 
 = 5.2 =
 *Release Date - 21 June 2023*
